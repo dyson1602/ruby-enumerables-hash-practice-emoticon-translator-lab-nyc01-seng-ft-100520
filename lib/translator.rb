@@ -9,7 +9,7 @@ def load_library(file_location)
       new_dictionary[emotion] = {:english => emoji[0], :japanese => emoji[1]}
     end
     
-    binding.pry
+    # binding.pry
   end
   ej_dictionary
 end
