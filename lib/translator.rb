@@ -31,16 +31,17 @@ end
 def get_english_meaning(file_location, japanese_emoticon)
   dictionary = load_library(file_location)
   
-  english_emoticon = nil 
+  english_meaning = nil 
   
   dictionary.each do |emotion, value|
     value.each do |language, inner_value|
-      if english_emoticon == inner_value
-        japanese_emoticon = dictionary[emotion][:japanese]
+      if japanese_emoticon == inner_value
+        english_meaning = dictionary[emotion.to_s]
+        binding.pry
       end
     end
   end
-  japanese_emoticon
+  english_meaning
 end
 
 
