@@ -21,7 +21,7 @@ def get_japanese_emoticon(file_location, english_emoticon)
       if english_emoticon == inner_value
         dictionary[key][:japanese]
       end
-    binding.pry
+    # binding.pry
     end
   
   end
