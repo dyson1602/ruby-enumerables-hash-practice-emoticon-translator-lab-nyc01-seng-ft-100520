@@ -8,6 +8,7 @@ def load_library(file_location)
     if !new_dictionary[emotion]
       new_dictionary[emotion] = {:english => emoji[0], :japanese => emoji[1]}
     end
+  end
   ej_dictionary
 end
 
