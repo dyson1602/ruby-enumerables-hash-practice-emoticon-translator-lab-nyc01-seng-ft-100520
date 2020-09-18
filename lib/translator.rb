@@ -42,7 +42,7 @@ def get_english_meaning(file_location, japanese_emoticon)
     end
   end
   
-  if !english_meaning.class == String
+  if english_meaning == nil
     "Sorry, that emoticon was not found"
   else
     english_meaning
