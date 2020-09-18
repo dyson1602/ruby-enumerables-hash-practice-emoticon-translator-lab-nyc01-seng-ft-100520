@@ -4,7 +4,7 @@ require 'yaml'
 def load_library(file_location)
   dictionary = YAML.load_file(file_location)
   
-  ej_dictionary = dictionary.each_with_object({}) do |(key, value), a
+  ej_dictionary = dictionary.each_with_object({}) do |(key, value), a|
   
   binding.pry
 
