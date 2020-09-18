@@ -13,6 +13,7 @@ def load_library(file_location)
   ej_dictionary
 end
 
+
 def get_japanese_emoticon(file_location, english_emoticon)
   dictionary = load_library(file_location)
   japanese_emoticon = nil 
@@ -27,6 +28,7 @@ def get_japanese_emoticon(file_location, english_emoticon)
   
   japanese_emoticon
 end
+
 
 def get_english_meaning(file_location, japanese_emoticon)
   dictionary = load_library(file_location)
