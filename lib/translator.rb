@@ -15,8 +15,10 @@ end
 def get_japanese_emoticon(file_location, english_emoticon)
   dictionary = load_library(file_location)
   
-  dictionary.
-  binding.pry
+  for dictionary.key[english_emoticon] do
+   binding.pry
+  end
+ 
   
 end
 
