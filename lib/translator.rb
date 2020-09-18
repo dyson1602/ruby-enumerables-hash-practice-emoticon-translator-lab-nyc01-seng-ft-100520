@@ -35,15 +35,11 @@ def get_english_meaning(file_location, japanese_emoticon)
   dictionary.each do |emotion, value|
     value.each do |language, inner_value|
       if japanese_emoticon == inner_value
-        english_meaning = emotion.to_s
+        english_meaning = emotion
       end
     end
   end
   
-  if english_meaning.class != String
-    "Sorry, that emoticon was not found"
-  elsif
-    english_meaning
-  end
+  english_meaning
 end
 
