@@ -4,7 +4,7 @@ require 'yaml'
 def load_library(file_location)
   dictionary = YAML.load_file(file_location)
   
-  ej_dictionary = {}
+  ej_dictionary = dictionary.
   
   binding.pry
 
