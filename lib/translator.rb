@@ -17,7 +17,10 @@ def get_japanese_emoticon(file_location, english_emoticon)
   dictionary = load_library(file_location)
   
   dictionary.each do |key, value|
-  binding.pry
+    value.each do |key, value|
+    binding.pry
+    end
+  
   end
   
   binding.pry
