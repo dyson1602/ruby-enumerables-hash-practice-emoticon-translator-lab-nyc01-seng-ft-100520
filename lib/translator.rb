@@ -5,7 +5,8 @@ def load_library(file_location)
   dictionary = YAML.load_file(file_location)
   
   ej_dictionary = dictionary.each_with_object({}) do |(emotion, emoji), a|
-    emotion.
+    if !dictionary[emotion]
+      
     binding.pry
   end
 
