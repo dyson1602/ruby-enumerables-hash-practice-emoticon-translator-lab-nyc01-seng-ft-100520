@@ -36,7 +36,7 @@ def get_english_meaning(file_location, japanese_emoticon)
   dictionary.each do |emotion, value|
     value.each do |language, inner_value|
       if japanese_emoticon == inner_value
-        english_meaning = dictionary[emotion.to_s]
+        english_meaning = dictionary[emotion]
         binding.pry
       end
     end
