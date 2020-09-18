@@ -41,7 +41,9 @@ def get_english_meaning(file_location, japanese_emoticon)
   end
   
   if english_meaning.class != String
-    "Sorry, that "
-  english_meaning
+    "Sorry, that emoticon was not found"
+  elsif
+    english_meaning
+  end
 end
 
