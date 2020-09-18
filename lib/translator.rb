@@ -6,18 +6,11 @@ def load_library(file_location)
   
   ej_dictionary = dictionary.each_with_object({}) do |(emotion, emoji), new_dictionary|
     if !new_dictionary[emotion]
-      new_dictionary[emotion] = {}
+      new_dictionary[emotion] = {:english => "", :japanese => ""}
     end
     binding.pry
   end
-
-  
-  binding.pry
-
-  
-  
-  
-  
+  ej_dictionary
 end
 
 # def get_japanese_emoticon
