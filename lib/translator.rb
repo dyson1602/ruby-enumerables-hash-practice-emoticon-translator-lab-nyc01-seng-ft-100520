@@ -39,6 +39,7 @@ def get_english_meaning(file_location, japanese_emoticon)
         english_meaning = emotion
       end
     end
+    english_meaning
   end
   
   if english_meaning = nil
