@@ -4,9 +4,9 @@ require 'yaml'
 def load_library(file_location)
   dictionary = YAML.load_file(file_location)
   
-  ej_dictionary = dictionary.each_with_object({}) do |(emotion, emoji), a|
+  ej_dictionary = dictionary.each_with_object({}) do |(emotion, emoji), new_dictionary|
     if !dictionary[emotion]
-      a
+      new_dictionary
     binding.pry
   end
 
