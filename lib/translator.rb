@@ -13,7 +13,6 @@ def load_library(file_location)
 end
 
 def get_japanese_emoticon(file_location, english_emoticon)
- 
   dictionary = load_library(file_location)
   
   japanese_emoticon = nil 
@@ -25,11 +24,23 @@ def get_japanese_emoticon(file_location, english_emoticon)
       end
     end
   end
+  
   japanese_emoticon
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(file_location, japanese_emoticon)
+  dictionary = load_library(file_location)
+  
+  english_emoticon = nil 
+  
+  dictionary.each do |emotion, value|
+    value.each do |language, inner_value|
+      if english_emoticon == inner_value
+        japanese_emoticon = dictionary[emotion][:japanese]
+      end
+    end
+  end
+  japanese_emoticon
 end
 
 
