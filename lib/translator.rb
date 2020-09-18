@@ -9,12 +9,12 @@ def load_library(file_location)
       new_dictionary[emotion] = {:english => emoji[0], :japanese => emoji[1]}
     end
   end
+  
   ej_dictionary
 end
 
 def get_japanese_emoticon(file_location, english_emoticon)
   dictionary = load_library(file_location)
-  
   japanese_emoticon = nil 
   
   dictionary.each do |emotion, value|
@@ -30,7 +30,6 @@ end
 
 def get_english_meaning(file_location, japanese_emoticon)
   dictionary = load_library(file_location)
-  
   english_meaning = nil 
   
   dictionary.each do |emotion, value|
@@ -38,11 +37,11 @@ def get_english_meaning(file_location, japanese_emoticon)
       if japanese_emoticon == inner_value
         english_meaning = emotion
       end
-      
     end
-    
   end
+  
+  if english_meaning.class != String
+    "Sorry, that "
   english_meaning
-  binding.pry
 end
 
