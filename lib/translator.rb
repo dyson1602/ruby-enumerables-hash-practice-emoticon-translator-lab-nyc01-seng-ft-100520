@@ -19,7 +19,8 @@ def get_japanese_emoticon(file_location, english_emoticon)
   japanese_emoticon = dictionary.each do |key, value|
     value.each do |inner_key, inner_value|
       if english_emoticon == inner_value
-        dictionary[key][]
+        dictionary[key][:japanese]
+      end
     binding.pry
     end
   
