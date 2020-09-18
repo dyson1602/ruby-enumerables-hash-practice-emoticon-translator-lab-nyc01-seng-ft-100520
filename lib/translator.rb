@@ -11,7 +11,7 @@ def load_library(file_location)
   ej_dictionary
 end
 
-def get_japanese_emoticon(ej_dictionary, english_emoticon)
+def get_japanese_emoticon(file_location, english_emoticon)
   
   
 end
