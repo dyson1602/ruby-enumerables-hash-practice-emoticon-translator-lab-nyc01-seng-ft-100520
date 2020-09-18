@@ -44,6 +44,3 @@ def get_english_meaning(file_location, japanese_emoticon)
   english_meaning
 end
 
-
-
-# japanese_emoticon = dictionary[(dictionary.key[english_emoticon])][1]
