@@ -6,7 +6,7 @@ def load_library(file_location)
   
   ej_dictionary = dictionary.each_with_object({}) do |(emotion, emoji), a|
     if !dictionary[emotion]
-      
+      a
     binding.pry
   end
 
