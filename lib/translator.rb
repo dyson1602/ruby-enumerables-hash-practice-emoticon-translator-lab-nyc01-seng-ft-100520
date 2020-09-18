@@ -22,15 +22,10 @@ def get_japanese_emoticon(file_location, english_emoticon)
     value.each do |language, inner_value|
       if english_emoticon == inner_value
         japanese_emoticon = dictionary[emotion][:japanese]
-        binding.pry
       end
-    # binding.pry
     end
-  
   end
-  
-  binding.pry
- 
+  japanese_emoticon
 end
 
 # def get_english_meaning
