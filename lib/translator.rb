@@ -38,9 +38,9 @@ def get_english_meaning(file_location, japanese_emoticon)
       if japanese_emoticon == inner_value
         english_meaning = emotion
       end
-      if 
     end
   end
+  
   english_meaning
 end
 
