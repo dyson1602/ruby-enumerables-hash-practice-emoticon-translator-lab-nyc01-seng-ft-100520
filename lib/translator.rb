@@ -38,15 +38,15 @@ def get_english_meaning(file_location, japanese_emoticon)
       if japanese_emoticon == inner_value
         english_meaning = emotion
       end
-      english_meaning
+      
     end
-    english_meaning
+    
   end
-  
-  if english_meaning = nil
-    "Sorry, that emoticon was not found"
-  elsif
-    english_meaning
-  end
+  english_meaning
+  # if english_meaning = nil
+  #   "Sorry, that emoticon was not found"
+  # elsif
+  #   english_meaning
+  # end
 end
 
